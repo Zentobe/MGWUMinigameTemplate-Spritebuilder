@@ -8,6 +8,10 @@
 #import "MyMinigame.h"
 
 @implementation MyMinigame
+{
+    CCPhysicsNode *_physicsNode;
+    CCNode *_crab;
+}
 
 -(id)init {
     if ((self = [super init])) {
@@ -19,9 +23,13 @@
 
 -(void)didLoadFromCCB {
     // Set up anything connected to Sprite Builder here
-    
+    self.userInteractionEnabled = TRUE;
     // We're calling a public method of the character that tells it to jump!
-    [self.hero jump];
+    _crab.physicsBody.collisionType = @"crab";
+    _hero.physicsBody.collisionType = @"hero";
+    _physicsNode.collisionDelegate = self;
+
+    
 }
 
 -(void)onEnter {
@@ -46,5 +54,8 @@
     return (MyCharacter *)self.character;
 }
 // DO NOT DELETE!
-
+-(BOOL)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair *)pair hero:(CCNode *)hero crab:(CCNode *)crab {
+    [self.hero jump];
+    return TRUE;
+}
 @end

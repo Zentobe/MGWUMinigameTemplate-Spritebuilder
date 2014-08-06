@@ -41,6 +41,7 @@
 		ED5C0B76194790F1000453EC /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED5C0B75194790F1000453EC /* GLKit.framework */; };
 		ED5C0B7A19479739000453EC /* MGWUCharacter.m in Sources */ = {isa = PBXBuildFile; fileRef = ED5C0B7919479739000453EC /* MGWUCharacter.m */; };
 		ED5FF05C19495F2F00571E13 /* MyCharacter.m in Sources */ = {isa = PBXBuildFile; fileRef = ED5FF05B19495F2F00571E13 /* MyCharacter.m */; };
+		F462AAB01991BFAF00FAF917 /* Crab.m in Sources */ = {isa = PBXBuildFile; fileRef = F462AAAF1991BFAF00FAF917 /* Crab.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +106,8 @@
 		ED5C0B7919479739000453EC /* MGWUCharacter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MGWUCharacter.m; path = Source/MGWUCharacter.m; sourceTree = "<group>"; };
 		ED5FF05A19495F2F00571E13 /* MyCharacter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyCharacter.h; path = Source/MyCharacter.h; sourceTree = "<group>"; };
 		ED5FF05B19495F2F00571E13 /* MyCharacter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyCharacter.m; path = Source/MyCharacter.m; sourceTree = "<group>"; };
+		F462AAAE1991BFAF00FAF917 /* Crab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Crab.h; path = Source/Crab.h; sourceTree = "<group>"; };
+		F462AAAF1991BFAF00FAF917 /* Crab.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Crab.m; path = Source/Crab.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +148,8 @@
 				ED5FF05B19495F2F00571E13 /* MyCharacter.m */,
 				ED03BBE51942587100E23822 /* MyMinigame.h */,
 				ED03BBE61942587100E23822 /* MyMinigame.m */,
+				F462AAAE1991BFAF00FAF917 /* Crab.h */,
+				F462AAAF1991BFAF00FAF917 /* Crab.m */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -358,6 +363,7 @@
 				ED03BBE31942563A00E23822 /* MGWUMinigame.m in Sources */,
 				65400FAB19743FE200EDBBED /* MGWUMinigameInstructions.m in Sources */,
 				ED5C0B7A19479739000453EC /* MGWUCharacter.m in Sources */,
+				F462AAB01991BFAF00FAF917 /* Crab.m in Sources */,
 				B737893F1807617C0076A88C /* AppDelegate.m in Sources */,
 				ED03BBE71942587100E23822 /* MyMinigame.m in Sources */,
 				ED03BBE41942563A00E23822 /* MGWUTestGame.m in Sources */,

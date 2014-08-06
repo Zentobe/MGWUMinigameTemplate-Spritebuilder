@@ -29,6 +29,8 @@
 
 -(void)didLoadFromCCB {
     // Set up anything connected to Sprite Builder here
+    self.physicsBody.collisionType = @"hero";
+
 }
 
 -(void)onEnter {
@@ -96,6 +98,8 @@
 // It's been added to a physics node in the main scene, like the penguins Peeved Penguins, so it will fall automatically!
 -(void)jump {
     self.physicsBody.velocity = ccp(0,122);
+    [self.animationManager runAnimationsForSequenceNamed:@"AnimIsoJump"];
+
 }
 
 @end
