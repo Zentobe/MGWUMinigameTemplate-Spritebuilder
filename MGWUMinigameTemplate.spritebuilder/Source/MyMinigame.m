@@ -56,6 +56,7 @@
 // DO NOT DELETE!
 -(BOOL)ccPhysicsCollisionBegin:(CCPhysicsCollisionPair *)pair hero:(CCNode *)hero crab:(CCNode *)crab {
     [self.hero jump];
+    [_physicsNode removeChild:crab];
     return TRUE;
 }
 @end
